@@ -1,14 +1,3 @@
-
-
-.score {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
 .bubble-container {
     position: absolute;
     top: 0;
@@ -23,11 +12,11 @@
     position: absolute;
     bottom: -100px;
     border-radius: 50%;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3); /* Lightened box-shadow */
+    backdrop-filter: blur(8px); /* Slightly less blur for visibility */
     cursor: pointer;
     animation: move 10s linear infinite;
-    z-index:-1;
+    z-index: -1;
 }
 
 @keyframes move {
