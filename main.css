@@ -1,0 +1,29 @@
+.bubble-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3); /* Lightened box-shadow */
+    backdrop-filter: blur(8px); /* Slightly less blur for visibility */
+    cursor: pointer;
+    animation: move 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-120vh) scale(1.5);
+    }
+}
